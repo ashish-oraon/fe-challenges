@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="./main.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <div class="limiter">
+      <div
+        class="container-login"
+        style="background-image: url('./assets/bg-01.webp')"
+      >
+        <div class="wrap-login">
+          <form class="login-form validate-form">
+            <span class="login-form-title"> Login </span>
+            <div
+              class="wrap-input validate-input"
+              data-validate="Username is required"
+            >
+              <span class="label-input">Username</span>
+              <input
+                class="input100"
+                type="text"
+                name="username"
+                placeholder="Type your username"
+              />
+              <span class="focus-input" data-symbol="🙋"></span>
+            </div>
+            <div
+              class="wrap-input validate-input"
+              data-validate="Password is required"
+            >
+              <span class="label-input">Password</span>
+              <input
+                class="input100"
+                type="password"
+                name="pass"
+                placeholder="Type your password"
+              />
+              <span class="focus-input" data-symbol="&#128274;"></span>
+            </div>
+            <div class="forgot-pass">
+              <a href="#"> Forgot password? </a>
+            </div>
+            <div class="container-login-form-btn">
+              <div class="wrap-login-form-btn">
+                <div class="login-form-bgbtn"></div>
+                <button class="login-form-btn">Login</button>
+              </div>
+            </div>
+
+            <div class="sign-up">
+              <a href="#" class="txt2">Sign Up </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
