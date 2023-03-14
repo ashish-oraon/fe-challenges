@@ -423,6 +423,23 @@ iframe {
   color: #7f7f7f;
   cursor: pointer;
 }
+.fa-eye:hover {
+  color: #363131;
+}
+
+.fa-eye:hover:after {
+  color: transparent;
+}
+.fa-eye::after {
+  content: "__";
+  display: inline-block;
+  color: #7f7f7f;
+  width: 3px;
+  height: 14px;
+  transform: rotate(135deg);
+  top: 1px;
+  position: relative;
+}
 
 .alert-validate::after {
   content: "\f06a";
