@@ -416,6 +416,14 @@ iframe {
   transition: opacity 0.4s;
 }
 
+.fa-eye {
+  float: right;
+  top: 50px;
+  position: relative;
+  color: #7f7f7f;
+  cursor: pointer;
+}
+
 .alert-validate::after {
   content: "\f06a";
   font-family: FontAwesome;
