@@ -191,6 +191,7 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
+  background-image: url("./assets/bg-01.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -238,7 +239,7 @@ iframe {
   padding-left: 7px;
 }
 
-.input100 {
+.input {
   font-family: Poppins-Medium;
   font-size: 16px;
   color: #333;
@@ -295,19 +296,19 @@ iframe {
   transition: all 0.4s;
 }
 
-.input100:focus + .focus-input::before {
+.input:focus + .focus-input::before {
   width: 100%;
 }
 
-.has-val.input100 + .focus-input::before {
+.has-val.input + .focus-input::before {
   width: 100%;
 }
 
-.input100:focus + .focus-input::after {
+.input:focus + .focus-input::after {
   color: #a64bf4;
 }
 
-.has-val.input100 + .focus-input::after {
+.has-val.input + .focus-input::after {
   color: #a64bf4;
 }
 
@@ -460,11 +461,11 @@ iframe {
 }
 
 .sign-up {
-    padding-top: 10px;
-    text-align: center;
+  padding-top: 10px;
+  text-align: center;
 }
 .sign-up a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 @media (max-width: 576px) {
