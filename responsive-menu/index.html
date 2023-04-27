@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Menu</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      a {
+        text-decoration: none;
+        font-size: 1.2rem;
+      }
+      div.container {
+        background-color: lightgrey;
+      }
+      div.container {
+        padding: 20px;
+      }
+      nav a {
+        padding: 10px;
+      }
+
+      @media screen and (min-width: 600px) {
+        div.collapse {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        nav {
+          display: none;
+        }
+        .collapse {
+          display: block;
+        }
+        .collapse ul {
+          list-style: none;
+        }
+        .collapse ul li {
+          width: 100%;
+          padding: 10px 0px;
+        }
+        div.toggle {
+          display: none;
+        }
+        div.expanded {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <a href="">Home</a>
+        <a href="">About Us</a>
+        <a href="">Contact</a>
+      </nav>
+      <div class="collapse">
+        <p id="menuBtn">☰</p>
+        <div class="toggle">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("menuBtn").addEventListener("click", function () {
+        document.querySelector(".toggle").classList.toggle("expanded");
+        document.getElementById("menuBtn").innerHTML =  document.querySelector(".toggle").classList.contains('expanded') ?  'X' : '☰'
+      });
+    </script>
+  </body>
+</html>

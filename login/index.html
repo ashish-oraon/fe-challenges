@@ -10,6 +10,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <style>
+      .wall {
+        display: flex;
+      }
+      .wall img {
+        flex-grow: 1;
+      }
+      .wall img:nth-child(2) {
+        transform: rotate(180deg);
+      }
+    </style>
     <title>Login</title>
   </head>
   <body>
@@ -62,6 +73,20 @@
           </form>
         </div>
       </div>
+    </div>
+    <div class="wall" style="display: flex; min-height: 100vh">
+      <img
+        src="https://assets.website-files.com/63c8eed1dd02fa1043abe085/63da399146c580a773aaf5e8_Preview%20Banner%20Shape1.png"
+        loading="lazy"
+        alt=""
+        class="preview-banner-shape1"
+      />
+      <img
+        src="https://assets.website-files.com/63c8eed1dd02fa1043abe085/63da399146c580a773aaf5e8_Preview%20Banner%20Shape1.png"
+        loading="lazy"
+        alt=""
+        class="preview-banner-shape1"
+      />
     </div>
   </body>
 </html>

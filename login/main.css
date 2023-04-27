@@ -468,7 +468,9 @@ iframe {
     opacity: 1;
   }
 }
-
+#a:hover + #b {
+  background: #ccc
+}
 .login-social-item {
   font-size: 25px;
   color: #fff;
